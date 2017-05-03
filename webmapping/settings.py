@@ -26,7 +26,7 @@ SECRET_KEY = '%!cqg344(!psx^k5awhuojbxpu5yqil&vn_jn05j*yz$g7lrk#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['heroku']
 
 
 # Application definition
@@ -81,6 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
     }
 }
 
